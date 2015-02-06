@@ -1,0 +1,206 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #021631;
+  padding-top: 90px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.mail-link {
+  color: #DDD;
+}
+
+.mail-link:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.content {
+  background-color: #19437C;
+  padding: 50px;
+
+  h1 {
+    color: white;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #FFF;
+  }
+}
+
+.web, .software {
+  background-color: #05224A;
+  padding: 40px;
+  min-height: 260px;
+}
+
+.hcihu-section {
+  border-bottom: 1px solid #FFF;
+  padding: 20px;
+  min-height: 300px;
+}
+
+.sexy-button {
+  background-color: #163365;
+  border: 0;
+  border: 1px solid #FFF;
+  padding: 20px 100px;
+  font-size: 25px;
+  transition: all .3s ease-in;
+  color: white;
+}
+
+.sexy-button:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all .3s;
+  color: white;
+}
+
+/* Footer - Thanks To Luke Brown - http://codepen.io/LukeXF/pen/EaPVLJ */
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+}
+
+.footer {
+  height: 40px;
+}
+
+.push {
+  height: 80px;
+}
+
+.footer {
+  padding: 20px;
+  color: white;
+}
+
+.footer > p {
+  paddin-bottom: 20px;
+}
+
+/* End Footer */
+
+/* Navbar */
+
+$bgDefault: #03204a;
+$bgHighlight: #18437b;
+$colDefault: #ffffff;
+$colHighlight: #ffffff;
+$dropDown: false;
+.navbar-default {
+  padding: 20px;
+  opacity: 0.9;
+  .navbar-collapse {
+    border-color: $bgHighlight;
+  }
+  background-color: $bgDefault;
+  border-color: $bgDefault;
+  .navbar-brand {
+    color: $colDefault;
+    border-bottom: 1px solid #FFF;
+    &:hover, &:focus {
+      color: $colHighlight;
+    }
+  }
+  .navbar-text {
+    color: $colDefault;
+  }
+  .navbar-nav {
+    > li {
+      > a {
+        color: $colDefault;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        &:hover, &:focus {
+          color: $colHighlight;
+        }
+      }
+      > a:hover {
+        color: #FFF;
+      }
+
+      @if $dropDown {
+        > .dropdown-menu {
+          background-color: $bgDefault;
+          > li > a {
+            color: $colDefault;
+            &:hover, &:focus {
+              color: $colHighlight;
+              background-color: $bgHighlight;
+            }
+          }
+          .divider {
+            background-color: $bgHighlight;
+          }
+        }
+      }
+    }
+    > .active {
+      > a, > a:hover, > a:focus {
+        background-color: $bgDefault;
+        color: white;
+        font-size: 20px;
+      }
+    }
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight;
+      }
+    }
+  }
+  .navbar-toggle {
+    border-color: $bgDefault;
+    &:hover, &:focus {
+      background-color: $bgHighlight;
+    }
+    .icon-bar {
+      background-color: $colDefault;
+    }
+  }
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $bgDefault;
+  }
+  .navbar-link {
+    color: $colDefault;
+    &:hover {
+      color: $colHighlight;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: $colDefault;
+      &:hover, &:focus {
+        color: $colHighlight;
+      }
+    }
+    > .active {
+      > a, > a:hover, > a:focus, {
+        color: $colHighlight;
+        background-color: $bgHighlight;
+      }
+    }
+  }
+}
+
+/* End Navbar */
